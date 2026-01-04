@@ -1,0 +1,8 @@
+nginxlocation / {
+    try_files $uri $uri/ $uri.php?$query_string;
+}
+
+# Redirect .php extensions
+if ($request_uri ~ ^/(.+)\.php) {
+    return 301 /$1;
+}

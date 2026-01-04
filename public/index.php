@@ -1,2 +1,5 @@
 <?php
-echo "Hello World!";
+header("Location: ./resources/views/home.php");
+die();
+
+?>

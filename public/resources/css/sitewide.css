@@ -1,0 +1,166 @@
+
+html{
+    max-width: 1500px;
+    margin: auto;
+}
+
+
+a.explore:hover {
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+header{
+    background-color: rgb(111, 42, 61);
+    color: #fff2f2;
+}
+
+/*Main Section CSS*/
+
+body{
+    background: linear-gradient(180deg, #262135, #874363, #56324B);
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/*Blockquote*/
+
+
+
+blockquote{
+    font-size: 1.4em;
+    height: 18vh;
+    margin:50px auto;
+    font-family:Open Sans;
+    font-style:italic;
+    color: #555555;
+    padding:1.2em 30px 1.2em 75px;
+    border-left:8px solid #78C0A8 ;
+    line-height:1.6;
+    position: relative;
+    background:#EDEDED;
+
+}
+
+blockquote::before{
+    font-family:Arial;
+    content: "\201C";
+    color:#78C0A8;
+    font-size:4em;
+    position: absolute;
+    left: 10px;
+    top:-10px;
+}
+
+blockquote::after{
+    content: '';
+}
+
+blockquote span{
+    display:block;
+    color:#333333;
+    font-style: normal;
+    font-weight: bold;
+    margin-top:1em;
+}
+
+/*Home Page*/
+
+
+
+
+
+/*Ordered Lists*/
+
+ol.decimal {list-style-type: decimal;
+margin-left: 20px;}
+
+ul.circle {list-style-type: circle;
+margin-left: 20px;}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+    flex-flow: wrap;
+    gap: .5rem;
+    margin: auto;
+}
+.enclosed {
+   width: 300px;
+    outline: 2px solid #874363;
+    margin: 15px;
+    padding: 10px;
+    line-height: 200%;
+    background-color: #56324B;
+    color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.enclosed:hover {
+    background-color: #66324B;
+}
+
+.quotes {
+    max-width: 450px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    line-height: 2em;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.9em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+h3 {
+font-size: 1.7em;
+    color: white;
+}
+
+
+h4 {
+    font-size: 1.5em;
+    text-align: left;
+    color: white;
+}
+
+h5 {
+    font-size: 1.3em;
+    text-align: left;
+    color: white;
+}
+
+.textOverPictureHome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bottom-left {
+    position: absolute;
+    bottom: 24%;
+    left: 16px;
+    font-size: 3vw;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: white;
+    margin: 5px;
+}
+
+
