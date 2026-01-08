@@ -1,0 +1,30 @@
+/*Footer*/
+
+#footer a{
+    color: lightgray;
+}
+#footer a:hover{
+color: white;
+}
+
+.footercontainer{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+.div1{
+    max-width: 33%;
+}
+.div2{
+    max-width: 33%;
+}
+.div3{
+    max-width: 33%;
+}
+
+#copyright{
+    margin: 25px;
+    color:white;
+}

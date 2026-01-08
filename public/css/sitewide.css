@@ -1,0 +1,272 @@
+
+html {
+    max-width: 1500px;
+    margin: auto;
+}
+
+
+/*Body*/
+body {
+    width: 100%;
+    background-color: white; /* For browsers that do not support gradients */
+    background-image: linear-gradient(180deg, #38273d, #4e2e48, #793857, #c4588c, #8a4e72, #834362, #763f5c, #54314b);
+    min-height: 100vh;
+}
+
+
+a.explore:hover {
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+/*Header Styles*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    margin: auto;
+    align-items: center;
+    width: 100%;
+}
+
+.head1 {
+
+}
+
+.head2 {
+
+    overflow: none;
+    color: white;
+    font-size: 3vw;
+}
+
+.head3 {
+   margin-right: 20px;
+}
+
+.donatebutton {
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 0px 5px 10px 5px;
+    padding: 10px 25px;
+    background-color: white;
+    max-width: 120px;
+    font-size: 1em;
+}
+
+/*Main Section CSS*/
+
+/*Image Gallery*/
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    align-content: start;
+    max-width: 700px;
+    margin: 0 auto;
+    transition: all 150ms linear;
+}
+
+.gallery input[type="radio"] {
+    display: none;
+}
+
+.gallery label {
+    position: relative;
+    display: block;
+    padding-bottom: 60%;
+    margin: 5px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.gallery label:before {
+    border: 1px solid #e3e3e3;
+    content: '';
+    position: absolute;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    top: -5px;
+}
+
+.gallery img {
+    display: none;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+    transition: all 150ms linear;
+}
+
+.gallery input[name="select"]:checked + label + img {
+    display: block;
+}
+
+.gallery input[name="select"]:checked + label:before {
+    border: 1px solid #000;
+}
+
+
+/*Contact Page*/
+
+/*Blockquote*/
+
+
+blockquote {
+    font-size: 1.4em;
+    height: 18vh;
+    margin: 50px auto;
+    font-family: Open Sans;
+    font-style: italic;
+    color: #555555;
+    padding: 1.2em 30px 1.2em 75px;
+    border-left: 8px solid #78C0A8;
+    line-height: 1.6;
+    position: relative;
+    background: #EDEDED;
+
+}
+
+blockquote::before {
+    font-family: Arial;
+    content: "\201C";
+    color: #78C0A8;
+    font-size: 4em;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+
+blockquote::after {
+    content: '';
+}
+
+blockquote span {
+    display: block;
+    color: #333333;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+
+/*Home Page*/
+
+/*.explore {
+    background-color: #7d234f;
+    width: 150px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #894363;
+    border-radius: 40px;
+    font-size: 2vh;
+}*/
+
+
+/*Ordered Lists*/
+
+ol.decimal {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+ul.circle {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+    flex-flow: wrap;
+    gap: .5rem;
+    margin: auto;
+}
+
+.enclosed {
+    width: 300px;
+    outline: 2px solid #874363;
+    margin: 15px;
+    padding: 10px;
+    line-height: 200%;
+    background-color: #56324B;
+    color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.enclosed:hover {
+    background-color: #66324B;
+}
+
+.quotes {
+    max-width: 450px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    line-height: 2em;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.9em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+h3 {
+    font-size: 1.7em;
+    color: white;
+}
+
+
+h4 {
+    font-size: 1.5em;
+    text-align: left;
+    color: white;
+}
+
+h5 {
+    font-size: 1.3em;
+    text-align: left;
+    color: white;
+}
+
+.textOverPictureHome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 24%;
+    left: 16px;
+    font-size: 3vw;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: white;
+    margin: 5px;
+}
+
+
